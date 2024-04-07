@@ -54,4 +54,3 @@ CONST_VAR = 1000
 
 # print("результат =", result)
 
-print(5 + 5)
