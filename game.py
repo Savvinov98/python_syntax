@@ -6,7 +6,7 @@ window = Tk()
 window.geometry("800x400")
 window.title("ROCK PAPER SCISSORS")
 
-frame = Frame(window, bg="yellow")
+frame = Frame(window)
 frame.place(relx=0.01, rely=0.01, relwidth=0.98, relheight=0.98)
 
 name = Label(frame, text="Rock Paper Scissors - Player vs Computer", font="100")
@@ -36,13 +36,13 @@ def Rock():
     computer = random.choice(["Rock", "Paper", "Scissors"])
     user_image.config(image=rock_png)
     if user == computer:
-        label4.config(text="Tie")
+        label4.config(text="Tie", bg="yellow")
         comp_image.config(image=rock_png)
     elif computer == "Paper":
-        label4.config(text="Computer Wins!")
+        label4.config(text="Computer Wins!", bg="red")
         comp_image.config(image=paper_png)
     else:
-        label4.config(text="U WIN !")
+        label4.config(text="U WIN !", bg="green")
         comp_image.config(image=scissors_png)
 
 
@@ -54,13 +54,13 @@ def Paper():
     computer = random.choice(["Rock", "Paper", "Scissors"])
     user_image.config(image=paper_png)
     if user == computer:
-        label4.config(text="Tie")
+        label4.config(text="Tie", bg="yellow")
         comp_image.config(image=paper_png)
     elif computer == "Scissors":
-        label4.config(text="Computer Wins!")
+        label4.config(text="Computer Wins!", bg="red")
         comp_image.config(image=scissors_png)
     else:
-        label4.config(text="U WIN !")
+        label4.config(text="U WIN !", bg="green")
         comp_image.config(image=rock_png)
 
 b2 = Button(frame, text="Paper", font="10", width=20, command=Paper)
@@ -71,13 +71,13 @@ def Scissors():
     computer = random.choice(["Rock", "Paper", "Scissors"])
     user_image.config(image=scissors_png)
     if user == computer:
-        label4.config(text="Tie")
+        label4.config(text="Tie", bg="yellow")
         comp_image.config(image=scissors_png)
     elif computer == "Rock":
-        label4.config(text="Computer Wins!")
+        label4.config(text="Computer Wins!", bg="red")
         comp_image.config(image=rock_png)
     else:
-        label4.config(text="U WIN !")
+        label4.config(text="U WIN !", bg="green")
         comp_image.config(image=paper_png)
 
 b3 = Button(frame, text="Scissors", font="10", width=20, command=Scissors)
