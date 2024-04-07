@@ -83,7 +83,6 @@ def Scissors():
 b3 = Button(frame, text="Scissors", font="10", width=20, command=Scissors)
 b3.place(x=500, y=300)
 
-
 window.mainloop()
 
 
