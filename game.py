@@ -4,7 +4,7 @@ import random
 window = Tk()
 
 window.geometry("800x400")
-window.title("ROCK PAPER SCISSORS")
+window.title("КАМЕНЬ НОЖНИЦЫ БУМАГА")
 
 frame = Frame(window)
 frame.place(relx=0.01, rely=0.01, relwidth=0.98, relheight=0.98)
@@ -84,5 +84,3 @@ b3 = Button(frame, text="Scissors", font="10", width=20, command=Scissors)
 b3.place(x=500, y=300)
 
 window.mainloop()
-
-
